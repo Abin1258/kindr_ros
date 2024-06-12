@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.5.1)
 project(kindr_ros)
+find_package(kindr)
+include_directories(${kindr_INCLUDE_DIRS})
 
 set(CMAKE_CXX_STANDARD 17)
 add_compile_options(-Wall -Wextra -Wpedantic)
